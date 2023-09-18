@@ -14,25 +14,28 @@
 ### Tables in Database:
 1. Parent
    
-   | Parent ID | Name | Surname | DOB | email | phone number | address |
+   | Parent ID | Name | Surname | DOB | email | phone number | address | Students ID |
    
    primary key: Parent ID
+   Students ID - List of studets ID related to this family.
 
 2. Student
    
-   | Student ID | Parent ID | Name | Surname | DOB | class ID |
+   | Student ID | Parent ID | Name | Surname | DOB | classes ID |
    
    primary key: student ID is Parent ID combined with serial number under which the student is registered when parent submitted an application for the family
+   Classes ID - List of clssses ID in which the student is enrolled 
 
 3. Teacher
    
-   | Teacher ID | Name | Surname | DOB | email | phone number | address |
+   | Teacher ID | Name | Surname | DOB | email | phone number | address | Classes ID |
    
    primary key: Teacher ID
+   Classes ID - List of classes ID taught by the teacher
 
 4. Class
    
-   | Class ID | Name | Time | Room number |
+   | Class ID | Name | Teacher ID | Time | Room number |
    
    primary key: Class ID
    
